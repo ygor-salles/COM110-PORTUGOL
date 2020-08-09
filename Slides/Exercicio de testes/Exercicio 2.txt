@@ -1,0 +1,16 @@
+algoritmo "Exercicio 2, lista Slide"
+
+var
+base, altura, area: real
+
+inicio
+escreva ("Digite o valor da base do triangulo: ")
+leia (base)
+escreva ("Digite o valor da altura do triangulo: ")
+leia (altura)
+
+area <- (base*altura)/2
+
+escreval ("O valor da área do triâgulo é: ",area)
+
+fimalgoritmo

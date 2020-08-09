@@ -1,0 +1,39 @@
+algoritmo "Lista 4.1 - Exercicio 13"
+
+
+var
+preco, novopreco : real
+class : caracter
+
+inicio
+escreva ("Digite o preço do produto: R$")
+leia (preco)
+
+se (preco <= 50) entao
+novopreco <- preco+(preco*0.05)
+escreval ("O novo preço é com aumento de 5%: R$",novopreco)
+senao
+     se ((preco > 50) e (preco <= 100)) entao
+     novopreco <- preco+(preco*0.10)
+     escreval ("O novo preço é com aumento de 10%: R$",novopreco)
+     senao
+     novopreco <- preco+(preco*0.15)
+     escreval ("O novo preço é com aumento de 15%: R$",novopreco)
+     fimse
+fimse
+
+se (novopreco <= 80) entao
+escreval ("Barato")
+senao
+     se ((novopreco > 80) e (novopreco <= 120)) entao
+     escreval ("Normal")
+     senao
+          se ((novopreco > 120) e (novopreco <= 200)) entao
+          escreval ("Caro")
+          senao
+               escreval ("Muito Caro")
+          fimse
+     fimse
+fimse
+
+fimalgoritmo

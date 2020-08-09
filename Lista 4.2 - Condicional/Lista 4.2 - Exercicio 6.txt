@@ -1,0 +1,14 @@
+algoritmo "Lista 4.2 - Exercicio 6"
+
+var
+x, fx : real
+
+inicio
+escreva ("Valor de x: ")
+leia (x)
+
+fx <- (5x+3)/((x^2-16)^1/2)
+
+escreval ("O valor de f(x) é igual a : ",fx)
+
+fimalgoritmo

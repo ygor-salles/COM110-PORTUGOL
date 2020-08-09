@@ -1,0 +1,43 @@
+algoritmo "Exercicio 17"
+
+// Faça um programa que receba a idade e o sexo de quatro pessoas e que calcule e mostre:
+// a idade média do grupo
+// a idade média das mulheres
+// a idade média dos homens
+
+var
+i, idade, contM, contF : inteiro
+sexo : caracter
+geral, masculino, feminino : real
+
+inicio
+
+contF <- 0
+contM <- 0
+masculino <- 0
+feminino <- 0
+
+para i de 1 ate 4 faca
+escreva ("Digite seu sexo, M ou F: ")
+leia (sexo)
+escreva ("Digite a idade: ")
+leia (idade)
+
+se (sexo = "m") entao
+contM <- contM+1
+masculino <- masculino+idade
+senao
+     se (sexo = "f") entao
+     contF <- contF+1
+     feminino <- feminino+idade
+     fimse
+fimse
+fimpara
+
+geral <- (masculino+feminino)/4
+
+escreval ("A media masculina é: ",masculino/contM)
+escreval ("A media feminina é: ",feminino/contF)
+escreval ("A média geral é: ",geral)
+
+fimalgoritmo

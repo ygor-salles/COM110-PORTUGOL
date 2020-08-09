@@ -1,0 +1,21 @@
+algoritmo "Lista 3 - Exercicio 8"
+
+//Escreva um algoritmo que receba dois nomes, nome1 e nome2, e realize a troca destes nomes. Mostrar o novo valor do nome1 e do nome2 depois de trocados.
+
+var
+nome1, nome2, aux : caracter
+
+inicio
+escreva ("Digite o primeiro nome: ")
+leia (nome1)
+escreva ("Digite o segundo nome: ")
+leia (nome2)
+
+aux <- nome2
+nome2 <- nome1
+nome1 <- aux
+
+escreval ("O primeiro nome é: ",nome1)
+escreval ("O segundo nome é: ",nome2)
+
+fimalgoritmo

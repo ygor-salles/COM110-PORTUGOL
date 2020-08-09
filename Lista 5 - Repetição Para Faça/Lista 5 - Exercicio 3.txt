@@ -1,0 +1,19 @@
+algoritmo "Lista 5 - Exercicio 3"
+
+// Escreva um algoritmo que leia n números e imprima a soma desses números. O valor de n deve
+// ser informado pelo usuário.
+
+var
+num  , soma , n : inteiro
+inicio
+
+escreva ("Digite o valor de N: ")
+leia(n)
+escreval ("Digite ",n ," números:")
+para num de 1 ate n passo 1 faca
+leia (num)
+soma <- soma + num
+fimpara
+escreval ("A soma dos",n , " números digitados é: ", soma)
+
+fimalgoritmo

@@ -1,0 +1,19 @@
+algoritmo "Lista 3 - Exercicio 4"
+
+//Considere um número de 3 dígitos, usando os operadores \ (divisão inteira) e % (resto da divisão), imprima o algarismo correspondente à centena e o algarismo correspondente à dezena.
+
+var
+valor, aux, cent, dez : inteiro
+
+inicio
+escreva ("Digite o valor inteiro com tres digitos: ")
+leia (valor)
+
+cent <- valor\100
+aux <- valor%100
+dez <- aux\10
+
+escreval ("O valor da centena é: ",cent)
+escreval ("O valor da dezena é: ",dez)
+
+fimalgoritmo

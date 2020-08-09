@@ -1,0 +1,33 @@
+algoritmo "Lista 4 - Exercicio 10"
+
+//  Construa um algoritmo que receba o nome de um time de futebol e retorne o estado de
+//  origem do time. Os nomes válidos são: São Paulo, Palmeiras, Flamengo, Vasco,
+//  Atlético Mineiro, Cruzeiro, Bahia, Grêmio e Internacional. Exibir uma mensagem caso
+//  o nome seja diferente de uma dessas opções.
+
+var
+time, estado : caracter
+
+inicio
+escreva ("Digite o nome de seu time, sem acento caso tenha: ")
+leia (time)
+
+se (time="sao paulo") ou (time="palmeiras") entao
+escreval ("O estado de origem do time é São Paulo!")
+senao
+     se (time="flamengo") ou (time="vasco") entao
+     escreval ("O estado de origem do time é Rio de Janeiro!")
+     senao
+          se (time="atletico mineiro") ou (time="cruzeiro") entao
+          escreval ("O estado de origem do time é Minas Gerais")
+          senao
+               se (time="bahia") ou (time="gremio") ou (time="internacional") entao
+               escreval ("O estado é de Origem do Rio Grande do Sul")
+               senao
+               escreval ("O time solicitado não consta nos registros do sistema!")
+               fimse
+          fimse
+     fimse
+fimse
+
+fimalgoritmo

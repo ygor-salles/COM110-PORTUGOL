@@ -1,0 +1,63 @@
+algoritmo "Lista 4.1 - Exercicio 23"
+
+//Função: Fazer um programa que mostre o código do produto e quantidade comprada de produto
+//  Calcular e mostrar o preço unitário, preço total da nota, valor de desconto, preço final da nota depois do desconto
+//Autor: Ygor Salles Aniceto Carvalho e Yasmin Karoline Aniceto Carvalho
+//Data: 21/03/2018
+//Seção de Declarações
+
+var
+cod, qtd : inteiro
+precoUni, precoTotal, desconto, precoFinal : real
+
+inicio
+escreva ("Digite o código do produto: ")
+leia (cod)
+escreva ("Digite a quantidade comprada do produto: ")
+leia (qtd)
+
+se ((cod >= 1) e (cod <= 10)) entao
+precoUni <- 10
+precoTotal <- 10*qtd
+escreval ("O preço unitário do produto é de: R$",precoUni)
+escreval ("O preço total do produto é de: R$",precoTotal)
+fimse
+         se ((cod >= 11) e (cod <= 20)) entao
+         precoUni <- 15
+         precoTotal <- 15*qtd
+         escreval ("O preço unitário do produto é de: R$",precoUni)
+         escreval ("O preço total do produto é de: R$",precoTotal)
+         fimse
+              se ((cod >= 21) e (cod <= 30)) entao
+              precoUni <- 20
+              precoTotal <- 20*qtd
+              escreval ("O preço unitário do produto é de: R$",precoUni)
+              escreval ("O preço total do produto é de: R$",precoTotal)
+              fimse
+                   se ((cod >= 31) e (cod <= 40)) entao
+                   precoUni <- 30
+                   precoTotal <- 30*qtd
+                   escreval ("O preço unitário do produto é de: R$",precoUni)
+                   escreval ("O preço total do produto é de: R$",precoTotal)
+                   fimse
+
+se (precoTotal <= 250) entao
+desconto <- precoTotal*0.05
+precoFinal <- precoTotal-(precoTotal*0.05)
+escreval ("O desconto é de 5% sobre o preço total do produto, resultando em: R$",desconto)
+escreval ("O preço total após o desconto é de: R$",precoFinal)
+fimse
+     se ((precoTotal > 250) e (precoTotal <= 500)) entao
+     desconto <- precoTotal*0.10
+     precoFinal <- precoTotal-(precoTotal*0.10)
+     escreval ("O desconto é de 10% sobre o preço total do produto, resultando em: R$",desconto)
+     escreval ("O preço total após o desconto é de: R$",precoFinal)
+     fimse
+          se (precoTotal > 500) entao
+          desconto <- precoTotal*0.15
+          precoFinal <- precoTotal-(precoTotal*0.15)
+          escreval ("O desconto é de 15% sobre o preço total do produto, resultando em: R$",desconto)
+          escreval ("O preço total após o desconto é de: R$",precoFinal)
+          fimse
+
+fimalgoritmo

@@ -1,0 +1,16 @@
+algoritmo "Lista 4 - Exercicio 2"
+
+var
+num : inteiro
+
+inicio
+escreva ("Digite um numero inteiro: ")
+leia (num)
+
+se (num%5=0) entao
+   escreval ("O número é divisível por 5.")
+senao
+   escreval ("O numero não é divisivel por 5.")
+fimse
+
+fimalgoritmo

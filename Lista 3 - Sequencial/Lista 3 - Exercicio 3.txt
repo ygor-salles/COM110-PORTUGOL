@@ -1,0 +1,21 @@
+algoritmo "Lista 3 - Exercicio 3"
+
+//Elabore um algoritmo para retornar o valor inteiro da divisão de dois números e o resto da divisão entre esses dois números.
+
+var
+resto, num, den : inteiro
+resultado : real
+
+inicio
+escreva ("Digite o valor inteiro do numerador: ")
+leia (num)
+escreva ("Digite o valor inteiro do denominador: ")
+leia (den)
+
+resultado <- num/den
+resto <- num%den
+
+escreval ("O resultado entre esses valores é: ",resultado)
+escreval ("O resto da divisão dos valores é de: ",resto)
+
+fimalgoritmo

@@ -1,0 +1,27 @@
+algoritmo "Lista 5.2 - Exercicio 3"
+
+// Criar um algoritmo que leia os limites inferior e superior de um intervalo e imprima
+// todos os números inteiros pares no intervalo aberto e o somatório desses números.
+// Suponha que os números digitados sejam crescentes, ou seja, o primeiro valor é menor
+// que o segundo
+
+var
+inferior, superior, i, soma : inteiro
+
+inicio
+escreva ("Digite o limite inferior: ")
+leia (inferior)
+escreva ("Digite o limite superior: ")
+leia (superior)
+
+soma <- 0
+para i de inferior ate superior faca
+se (i mod 2=0) entao
+escreval (i)
+soma <- soma+i
+fimse
+fimpara
+
+escreval ("A soma dos numeros pares do intervalo é: ",soma)
+
+fimalgoritmo

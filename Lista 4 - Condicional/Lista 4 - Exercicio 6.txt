@@ -1,0 +1,26 @@
+algoritmo "Lista 4 - Exercicio 6"
+
+var
+tProcesso, tCliente : caracter
+valor, prazo : real
+
+inicio
+escreva ("Digite o tipo de processo: ")
+leia (tProcesso)
+escreva ("Digite o valor do processo: ")
+leia (valor)
+
+se (tProcesso = "a") e (valor > 12000) entao
+escreval ("Processo em andamento com custo alto")
+fimse
+
+escreva ("Digite o valor do prazo (meses): ")
+leia (prazo)
+escreva ("Digite o seu tipo de cliente (Especial ou não): ")
+leia (tCliente)
+
+se (prazo > 12) ou (tCliente = "especial") entao
+escreval ("Processo crítico")
+fimse
+
+fimalgoritmo

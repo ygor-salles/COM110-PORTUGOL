@@ -1,0 +1,19 @@
+algoritmo "Exercicio C"
+
+var
+a, b, aux : inteiro
+
+inicio
+escreva ("Digite o valor de A: ")
+leia (a)
+escreva ("Digite o valor de B: ")
+leia (b)
+
+aux <- b
+b <- a
+a <- aux
+
+escreval ("O valor de A é: ",a)
+escreval ("O valor de B é: ",b)
+
+fimalgoritmo

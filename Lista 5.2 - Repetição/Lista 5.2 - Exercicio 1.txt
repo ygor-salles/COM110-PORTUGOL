@@ -1,0 +1,70 @@
+algoritmo "Lista 5.2 - Exercicio 1"
+
+// Faça um programa que receba a idade e o peso de quinze pessoas, e que calcule e
+// mostre as médias dos pesos das pessoas da mesma faixa etária. As faixas etárias são: de
+// 1a 10 anos, de 11 a 20 anos, de 21 a 30 anos e acima de 31 anos
+
+var
+idade, peso, soma1, soma2, soma3, soma4 : real
+i, c1, c2, c3, c4 : inteiro
+
+inicio
+soma1<-0
+soma2<-0
+soma3<-0
+soma4<-0
+c1<-0
+c2<-0
+c3<-0
+c4<-0
+para i de 1 ate 5 faca
+escreva ("Digite a idade: ")
+leia (idade)
+escreva ("Digite seu peso: ")
+leia (peso)
+
+se (idade < 1) entao
+escreval ("Digite uma idade válida!")
+senao
+     se ((idade>=1) e (idade<=10)) entao
+     soma1 <- soma1+peso
+     c1 <- c1+1
+     senao
+          se ((idade>=11) e (idade<=20)) entao
+          soma2 <- soma2+peso
+          c2 <- c2+1
+          senao
+               se ((idade>=21) e (idade<=30)) entao
+               soma3 <- soma3+peso
+               c3 <- c3+1
+               senao
+               soma4 <- soma4+peso
+               c4 <- c4+1
+               fimse
+          fimse
+     fimse
+fimse
+fimpara
+
+se (c1>0) entao
+escreval ("A media dos pesos da faixa de 1 a 10 é: ",soma1/c1)
+senao
+escreval ("Não foi digitado pesos na faixa etária de 1 a 10!")
+fimse
+     se (c2>0) entao
+     escreval ("A media dos pesos da faixa de 11 a 20 é: ",soma2/c2)
+     senao
+     escreval ("Não foi digitado pesos na faixa etária de 11 a 20!")
+     fimse
+          se (c3>0) entao
+          escreval ("A media dos pesos da faixa de 21 a 30 é: ",soma3/c3)
+          senao
+          escreval ("Não foi digitado pesos na faixa etária de 21 a 30!")
+          fimse
+               se (c4>0) entao
+               escreval("A media dos pesos maiores da faixa de 31 é: ",soma4/c4)
+               senao
+               escreval ("Não foi digitado pesos na faixa etária maiores de 31!")
+               fimse
+
+fimalgoritmo

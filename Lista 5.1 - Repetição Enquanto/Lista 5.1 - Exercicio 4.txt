@@ -1,0 +1,32 @@
+algoritmo "Lista 5.1 - exercicio 4"
+
+var
+cat : caracter
+salario, soma : real
+
+inicio
+escreva ("Digite a sua categoria: ")
+leia (cat)
+
+soma <- 0
+enquanto (cat<>"x") faca
+se (cat = "a") entao
+salario <- 10000
+escreval ("Seu salario é de: R$",salario)
+senao
+     se (cat = "b") entao
+     salario <- 5000
+     escreval ("Seu salario é de: R$",salario)
+     senao
+     salario <- 0
+     escreval ("Categoria Inválida!")
+     fimse
+fimse
+soma <- soma+salario
+escreval ("Digite a categoria: ")
+leia (cat)
+fimenquanto
+
+escreval ("A soma de todos os salários é de: R$",soma)
+
+fimalgoritmo

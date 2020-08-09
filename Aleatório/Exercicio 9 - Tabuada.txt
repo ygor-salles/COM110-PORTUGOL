@@ -1,0 +1,24 @@
+algoritmo "Tabuada - Exercicio 10"
+
+//Faça um programa que mostre as tabuadas de 1 à 10
+
+var
+i : inteiro
+num, tabuada : real
+
+inicio
+escreva ("Digite um número para o calculo da tabuada: ")
+leia (num)
+
+enquanto ((num>=1) e (num<=10)) faca
+para i de 1 ate 10 faca
+tabuada <- num*i
+escreval (num," x ",i," = ",tabuada)
+fimpara
+escreva ("Digite um número para o calculo da tabuada: ")
+leia (num)
+fimenquanto
+
+escreval ("Digite valores de 1 à 10!")
+
+fimalgoritmo

@@ -1,0 +1,26 @@
+algoritmo "Lista 4 - Exercicio 3"
+
+//Desenvolver um algoritmo que leia um número inteiro e verifique se é divisível por 5 edivisível por 3 exiba uma mensagem com esta informação. Caso não seja, é necessário exibir uma mensagem.
+
+var
+num : inteiro
+
+inicio
+escreva ("Digite um número: ")
+leia (num)
+
+se (num%5=0) e (num%3=0) entao
+escreval ("O numero ",num," é divisivel por 5 e por 3")
+senao
+     se (num%5=0) entao
+     escreval ("O numero ",num," é divísivel apenas por 5")
+     senao
+          se (num%3=0) entao
+          escreval ("O numero ",num," é divísel apenas por 3")
+          senao
+          escreval ("O numero ",num," não é divisivel por 3 e nem por 5")
+          fimse
+     fimse
+fimse
+
+fimalgoritmo

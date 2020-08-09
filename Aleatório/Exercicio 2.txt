@@ -1,0 +1,22 @@
+algoritmo "Exercicio 2 - Livro Fundamentos de Programação"
+
+var
+n, i:inteiro
+s:real
+
+inicio
+
+  escreva("digite um numero positivo: ")
+   leia(n)
+   enquanto (n<1) faca
+     escreva("digite um numero positivo: ")
+     leia(n)
+   fimenquanto
+     s<-0
+   para i de 1 ate n faca
+     s<-s+(1/i)
+   fimpara
+   escreval("")
+    escreval("",s)
+
+fimalgoritmo

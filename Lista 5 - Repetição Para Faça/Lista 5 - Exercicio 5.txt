@@ -1,0 +1,31 @@
+algoritmo "Lista 5 - Exercicio 5"
+
+//Escreva um algoritmo que imprima os 100 primeiros números ímpares começando de 1
+
+var
+i : inteiro
+
+inicio
+
+para i de 1 ate 100 passo 1 faca
+se (i%2<>0) entao
+escreval (i)
+fimse
+fimpara
+
+fimalgoritmo
+
+
+algoritmo "Segunda Opção de Resolução do código"
+
+// Escreva um algoritmo que imprima os 100 primeiros números ímpares começando de 1
+
+var
+i : inteiro
+
+inicio
+para i de 1 ate 100 passo 2 faca
+escreval (i)
+fimpara
+
+fimalgoritmo

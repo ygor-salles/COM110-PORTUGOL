@@ -1,0 +1,18 @@
+algoritmo "Lista 3 - Exercicio 14"
+
+//Escreva um algoritmo para calcular e escrever a área de um triângulo, sendo dados a sua base e a sua altura (Área = (base X altura) / 2)
+
+var
+area, base, altura : real
+
+inicio
+escreva ("Digite o valor da base do triâgulo: ")
+leia (base)
+escreva ("Digite o valor da altura do triâgulo: ")
+leia (altura)
+
+area <- (base*altura)/2
+
+escreval ("O valor da area do triangulo é de: ",area)
+
+fimalgoritmo

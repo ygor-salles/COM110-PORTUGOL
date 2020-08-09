@@ -1,0 +1,14 @@
+algoritmo "1 Lista PDF"
+
+var
+sal, novosal : real
+
+inicio
+escreva ("Digite o valor do salário antigo: ")
+leia (sal)
+
+novosal <- sal+(sal*0.2)
+
+escreval ("O valor do novo salário é de: R$",novosal)
+
+fimalgoritmo

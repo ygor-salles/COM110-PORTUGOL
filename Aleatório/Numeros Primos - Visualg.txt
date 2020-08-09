@@ -1,0 +1,23 @@
+algoritmo "Exercicio 3 - Livro Fundamentos de Programação"
+
+//Numeros primos
+
+var
+i, c, n, p : inteiro
+
+inicio
+escreva ("Digite o valor de N: ")
+leia (n)
+para i de 1 ate n faca
+     p<-0
+     para c de 1 ate i faca
+     se (i % c = 0) entao
+     p<- p+1
+     fimse
+     fimpara
+se (p=2) entao
+escreval (i)
+fimse
+fimpara
+
+fimalgoritmo

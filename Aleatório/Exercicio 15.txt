@@ -1,0 +1,21 @@
+algoritmo "Exercicio 15"
+
+// Faça um programa que receba dez numeros e que calcule e
+// mostre a quantidade de números entre 30 e 90
+
+var
+i, num, c : inteiro
+
+inicio
+c <- 0
+para i de 1 ate 10 faca
+escreva ("Digite um numero inteiro: ")
+leia (num)
+se ((num>=30) e (num<=90)) entao
+c <- c+1
+fimse
+fimpara
+
+escreval ("A quantidade é de numeros entre 30 e 90 é de: ",c)
+
+fimalgoritmo

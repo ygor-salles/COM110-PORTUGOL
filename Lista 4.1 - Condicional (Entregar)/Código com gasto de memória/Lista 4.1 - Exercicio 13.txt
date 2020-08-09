@@ -1,0 +1,39 @@
+algoritmo "Lista 4.1 - Exercicio 13"
+
+//Função: Faça um progrma que receba o preço de um produto, calcule e mostre de acordo com a tabela o novo preço e a classificação
+//Autor: Ygor Salles Aniceto Carvalho e Yasmin Karoline Aniceto Carvalho
+//Data: 21/03/2018
+//Seção de Declarações
+
+var
+preco, novopreco : real
+
+inicio
+escreva ("Digite o preço do produto: ")
+leia (preco)
+
+se (preco<=50) entao
+novopreco <- preco+(preco*0.05)
+escreval ("O novo preço do produto é de: ",novopreco)
+fimse
+     se ((preco>50) e (preco<100)) entao
+     novopreco <- preco+(preco*0.10)
+     escreval ("O novo preco do preco é de: ",novopreco)
+     fimse
+          se (preco>100) entao
+          novopreco <- preco+(preco*0.15)
+          escreval ("O novo preço é de : ",novopreco)
+          fimse
+               se (novopreco < 80) entao
+               escreval ("Barato")
+               fimse
+                        se ((novopreco>=80) e (novopreco<=120)) entao
+                        escreval ("Normal")
+                        fimse
+                                 se ((novopreco>=120) e (novopreco<=200)) entao
+                                 escreval ("Caro")
+                                 fimse
+                                         se (novopreco>200) entao
+                                         escreval ("Muito Caro")
+                                         fimse
+fimalgoritmo

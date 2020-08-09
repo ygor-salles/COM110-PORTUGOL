@@ -1,0 +1,21 @@
+algoritmo "Exercicio 1 - Lista 3"
+
+//  N canetas foram pagas com uma nota de Z reais, obtendo-se y reais de troco.
+//  Elabore um algoritmo que retorne quando custou cada caneta.
+
+var
+n, z, y, custo : real
+
+inicio
+escreva ("Digite a quantidade de canetas: ")
+leia (n)
+escreva ("Digite o valor da nota que foi paga as canetas: ")
+leia (z)
+escreva ("Digite o valor do troco: ")
+leia (y)
+
+custo <- (z-y)/n
+
+escreval ("O custo da caneta é de: ",custo)
+
+fimalgoritmo

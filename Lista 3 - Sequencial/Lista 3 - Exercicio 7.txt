@@ -1,0 +1,30 @@
+algoritmo "Lista 3 - Exercicio 7"
+
+//Escreva um algoritmo para ler dois valores inteiros, efetuar e mostrar o resultado das operações de adição, subtração e multiplicação do primeiro número pelo segundo. Considere que todos os números são diferentes de 0.
+
+var
+a, b, adi, subt, divi, mult : real
+
+inicio
+escreva ("Digite o valor de A (Diferente de 0): ")
+leia (a)
+escreva ("Digite o valor de B (Diferente de 0): ")
+leia (b)
+
+se (a<>0) e (b<>0) entao
+
+adi <- a+b
+subt <- a-b
+divi <- a/b
+mult <- a*b
+
+escreval ("O resultado da soma é: ",adi)
+escreval ("O resultado da subtração é: ",subt)
+escreval ("O resultado da divisão é: ",divi)
+escreval ("O resultado da multiplicação é: ",mult)
+
+senao
+escreval ("Digite um valor diferente de 0 para A e B! ")
+
+fimse
+fimalgoritmo

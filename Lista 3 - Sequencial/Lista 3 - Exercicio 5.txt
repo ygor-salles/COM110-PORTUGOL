@@ -1,0 +1,16 @@
+algoritmo "Lista 3 - Exercicio 5"
+
+//Elabore um algoritmo que transforme a temperatura fornecida em C para a correspondente em F (C = 5/9(F-32)) e retorne o resultado.
+
+var
+c, f : real
+
+inicio
+escreva ("Digite a temperatura em Celsius: ")
+leia (c)
+
+f <- ((c*9)/5)+32
+
+escreval ("A temperatura em Fahrenheit é: ",f)
+
+fimalgoritmo

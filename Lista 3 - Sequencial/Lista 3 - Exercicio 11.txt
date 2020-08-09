@@ -1,0 +1,18 @@
+algoritmo "Lista 3 - Exercicio 11"
+
+//Escreva um algoritmo para calcular e exibir a média ponderada de 2 notas dadas. (nota 1 tem peso 6 e nota 2 tem peso 4)
+
+var
+nota1, nota2, media : real
+
+inicio
+escreva ("Digite o valor da nota 1: ")
+leia (nota1)
+escreva ("Digite o valor da nota 2: ")
+leia (nota2)
+
+media <- (nota1*6 + nota2*4)/10
+
+escreval ("A media ponderada é: ",media)
+
+fimalgoritmo

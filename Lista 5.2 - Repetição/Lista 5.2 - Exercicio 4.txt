@@ -1,0 +1,36 @@
+algoritmo "Lista 5.2 - Exercicio 4"
+
+// Foi feita uma pesquisa entre os habitantes de uma região. Foram coletados os dados de
+// idade, sexo (M/F) e salário. Faça um algoritmo que informe: a média de salário do
+// grupo; maior e menor idade do grupo e a quantidade de mulheres com salário até
+// R$100,00. Encerre a entrada de dados quando for digitada uma idade negativa
+
+var
+idade,c,qtd : inteiro
+sexo : caracter
+salario, soma : real
+
+inicio
+escreva ("Digite a idade: ")
+leia (idade)
+
+soma <- 0
+c<-0
+    enquanto (idade>=0) faca
+             escreva ("Digite o seu sexo m ou f: ")
+             leia (sexo)
+             escreva ("Digite o seu salario: ")
+             leia (salario)
+                  se (sexo="f") e (salario<=100) entao
+                     qtd<-qtd+1
+                  fimse
+             soma <- soma+salario
+             c <- c+1
+             escreva ("Digite a idade: ")
+             leia (idade)
+             fimenquanto
+
+escreval ("A media de salários do grupo é: ",soma/c)
+escreval ("A quantidade de mulheres que ganham ate R$100 é: ",qtd)
+
+fimalgoritmo

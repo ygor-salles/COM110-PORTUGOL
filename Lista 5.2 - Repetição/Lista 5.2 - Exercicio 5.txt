@@ -1,0 +1,39 @@
+algoritmo "Lista 5.2 - Exercicio 5"
+
+// Escrever um algoritmo que leia uma quantidade desconhecida de números inteiros e
+// conte quantos deles estão nos seguintes intervalos: [0-25], [26-50], [51-75] e [76-100].
+// A entrada de dados deve terminar quando for lido um número negativo.
+
+var
+num, c1, c2, c3, c4 : inteiro
+
+inicio
+escreva ("Digite um numero inteiro: ")
+leia (num)
+
+enquanto (num>=0) faca
+se ((num>=0) e (num<=25)) entao
+c1 <- c1+1
+senao
+     se ((num>=26) e (num<=50)) entao
+     c2 <- c2+1
+     senao
+          se ((num>=51) e (num<=75)) entao
+          c3 <- c3+1
+          senao
+               se ((num>=76) e (num<=100)) entao
+               c4 <- c4+1
+               fimse
+          fimse
+     fimse
+fimse
+escreva ("Digite um numero inteiro: ")
+leia (num)
+fimenquanto
+
+escreval ("A qauntidade de valores no intervalo [0-25] é: ",c1)
+escreval ("A qauntidade de valores no intervalo [26-50] é: ",c2)
+escreval ("A qauntidade de valores no intervalo [51-75] é: ",c3)
+escreval ("A qauntidade de valores no intervalo [76-100] é: ",c4)
+
+fimalgoritmo

@@ -1,0 +1,20 @@
+algoritmo "Lista 3 - Exercicio 6"
+
+//Elabore um algoritmo que calcule quantas notas de 50, 10 e 1 são necessárias para se pagar uma conta cujo valor é fornecido.
+
+var
+valor, n50, n10, n1 : real
+
+inicio
+escreva ("Digite o valor da conta: ")
+leia (valor)
+
+n50 <- valor/50
+n10 <- valor/10
+n1 <- valor/1
+
+escreval ("Será necessário ",n50, " notas de 50 para pagar a conta")
+escreval ("Será necessário ",n10, " notas de 10 para pagar a conta")
+escreval ("Será necessário ",n1, " notas de 1 para pagar a conta")
+
+fimalgoritmo

@@ -1,0 +1,26 @@
+algoritmo "Lista 5 - Exercicio 7"
+
+// Escreva um algoritmo que leia o salário e o nome de 20 funcionários
+// e retorne o nome e o salário do funcionário que ganha mais.
+// Todos os salários são diferentes.
+
+var
+vet: vetor[1..20] de inteiro
+salario, i : inteiro
+nome, nomeMaior : caracter
+
+inicio
+      para i de 1 ate 20 faca
+      escreva ("Digite seu nome: ")
+      leia (nome)
+      escreva ("Digite seu salario: ")
+      leia (vet[i])
+           se vet[i]> salario entao
+              salario <- vet[i]
+              nomeMaior <- nome
+           fimse
+      fimpara
+escreval ("")
+escreval ("o maior salario é: ",salario," do: ",nomeMaior)
+
+fimalgoritmo

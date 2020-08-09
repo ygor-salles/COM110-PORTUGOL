@@ -1,0 +1,30 @@
+algoritmo "Lista 4 - Exercicio 9"
+
+//  Faça um algoritmo que receba a altura (H) e o sexo de uma pessoa, calcule e imprima o
+//  seu peso ideal, utilizando as seguintes fórmulas:
+//  • Para homens: (72.7 * H) – 58
+//  • Para mulheres: (62.1 * H) – 44.7 
+
+var
+h, peso : real
+sexo : caracter
+
+inicio
+escreva ("Digite o seu sexo, (m) para masculino e (f) para feminino: ")
+leia (sexo)
+escreva ("Digite a sua altura: ")
+leia (h)
+
+se (sexo <> "m") e (sexo <> "f") entao
+escreval ("Digite uma letra correspondente ao sexo, masculino(m) ou feminino(f)!")
+senao
+     se (sexo = "m") entao
+     peso <- (72.7*h)-58
+     escreval ("O peso ideal é de: ",peso)
+     senao
+          peso <- (62.1*h)-44.7
+          escreval ("O peso ideal é de: ",peso)
+     fimse
+fimse
+
+fimalgoritmo

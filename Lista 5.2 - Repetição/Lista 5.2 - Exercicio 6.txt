@@ -1,0 +1,19 @@
+algoritmo "Lista 5.2 - Exercicio 6"
+
+// Escreva um algoritmo que leia uma lista de 10 números inteiros positivos e imprima
+// quais números são divisíveis por 2. Caso seja digitado um número negativo, o algoritmo
+// deve ser interrompido. Use o comando interrompa.
+
+var
+num, i : inteiro
+
+inicio
+para i de 1 ate 10 faca
+escreva ("Digite um numero: ")
+leia (num)
+se (num % 2= 0) entao
+escreval ("é divisivel por 2")
+fimse
+fimpara
+
+fimalgoritmo

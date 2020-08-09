@@ -1,0 +1,32 @@
+algoritmo "Exercicio - Enquanto"
+
+// Leia os dados clientes e retorne a media da idade. os dados lidos
+// sao o nome e a idade dos clientes. A leitura dos dados deve ser interpretada quando for
+// digitado um valor negativo p/ idade
+
+var
+nome : caracter
+idade,soma, cont, : inteiro
+media: real
+
+inicio
+escreva ("Digite idade: ")
+leia (idade)
+cont <- 0
+soma <- 0
+
+enquanto (idade >= 0) faca
+cont <- cont+1
+escreva ("Digite o nome ")
+leia (nome)
+soma <- soma+idade
+escreva ("Digite a idade: ")
+leia (idade)
+fimenquanto
+
+se (cont>0) entao
+media <- soma/cont
+escreva ("A media è: ",media)
+fimse
+
+fimalgoritmo

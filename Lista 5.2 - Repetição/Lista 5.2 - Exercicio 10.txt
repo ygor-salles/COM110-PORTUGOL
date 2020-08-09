@@ -1,0 +1,21 @@
+algoritmo "Lista 5.2 - Exercicio 10"
+
+// Elabore um algoritmo para calcular e escrever a soma S:
+// S = 1/1 – 2/4 + 3/9 – 4/16 + 5/25 +, ..., - 10/100
+
+var
+num : inteiro                   //num = variável do numerador
+s, den : real                   //s = variável soma;  den = variável denominador
+
+inicio
+s<-0
+para num de 1 ate 10 faca       //devemos definir de como será as variáveis no proceso da contagem
+     den <- num^2               //denominador será o numerador ao quadrado
+     se (num % 2 = 0) entao
+        num <- -num             //todos os numeradores pares serão negativos
+     fimse
+     s <- s+(num/den)           //Por fim deve-se somar todos os numeradores por denominadores ja definidos
+     fimpara
+escreval (s)                    //Mostrar o resultado da soma total
+
+fimalgoritmo

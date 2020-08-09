@@ -1,0 +1,44 @@
+algoritmo "Lista 4 - Exercicio 5"
+
+//  A partir de valores digitados pelo usuário da média de um aluno, informar se ele foi
+//  aprovado (media >= 6), reprovado (0 < media < 3), ou se ficou de exame
+//  (3<=media<6). Se ficou de exame, solicitar a nota do exame e informar se o aluno foi
+//  aprovado (nota do exame >= 6) ou reprovado. Se a nota digitada for < 0, escrever nota
+//  inválida.
+
+var
+media, exame : real
+
+inicio
+escreva ("Digite o valor da sua media: ")
+leia (media)
+
+se (media < 0) entao
+escreval ("Nota inválida !")
+senao
+     se (media >= 6) entao
+     escreval ("Aprovado!")
+     senao
+          se  (media < 3) entao
+          escreval ("Reprovado!")
+          senao
+          escreval ("Ficou de exame!")
+          fimse
+     fimse
+fimse
+
+se (media >=3) e (media <6) entao
+escreva ("Digite a nota de seu exame: ")
+leia (exame)
+     se (exame < 0) entao
+     escreval ("Nota Inválida! ")
+     senao
+          se (exame >= 6) entao
+          escreval ("Aprovado no exame!")
+          senao
+          escreval ("Reprovado no exame!")
+          fimse
+     fimse
+fimse
+
+fimalgoritmo

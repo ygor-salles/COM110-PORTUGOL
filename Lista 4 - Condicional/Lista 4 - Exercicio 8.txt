@@ -1,0 +1,23 @@
+algoritmo "Lista 4 - Exercicio 8"
+
+//  Faça um algoritmo que calcule e imprima o salário reajustado de um funcionário de
+//  acordo com a seguinte regra:
+//  • Salários até 300, reajuste 50%
+//  • Salários maiores que 300, reajuste 30%
+
+var
+salario, novoSal : real
+
+inicio
+escreva ("Digite o valor do salario: R$ ")
+leia (salario)
+
+se (salario <= 300) entao
+novoSal <- salario+(salario*0.5)
+escreval ("O novo salário após reajuste é de R$",novoSal)
+senao
+novoSal <- salario+(salario*0.3)
+escreval ("O novo salário após reajuste é de: R$",novoSal)
+fimse
+
+fimalgoritmo

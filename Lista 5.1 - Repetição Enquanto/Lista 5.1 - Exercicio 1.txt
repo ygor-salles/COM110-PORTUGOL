@@ -1,0 +1,22 @@
+algoritmo "Lista 5.1 - exercicio 1"
+
+//Escreva um algoritmo que leia dez números do usuário e imprima a metade de cada número.
+
+var
+num, metade : real
+cont : inteiro
+
+inicio
+escreva ("Digite um número: ")
+leia (num)
+cont <- 0
+
+enquanto (cont<10) faca
+cont <- cont+1
+metade <- num/2
+escreval ("A metade do numero é: ",metade)
+escreva ("Digite um número: ")
+leia (num)
+fimenquanto
+
+fimalgoritmo

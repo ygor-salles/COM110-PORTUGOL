@@ -1,0 +1,21 @@
+algoritmo "Lista 3 - Exercicio 2"
+
+//Elabore um algoritmo que receba dois valores e troque seus valores entre si.
+
+var
+a, b, aux : inteiro
+
+inicio
+escreva ("Digite um valor inteiro para A: ")
+leia (a)
+escreva ("Digite um valor inteiro para B: ")
+leia (b)
+
+aux <- b
+b <- a
+a <- aux
+
+escreval ("O valor de A é: ",a)
+escreval ("O valor de B é: ",b)
+
+fimalgoritmo

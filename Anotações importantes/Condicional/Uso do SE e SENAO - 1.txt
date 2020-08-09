@@ -1,0 +1,36 @@
+			USO DO SE E SENAO:
+	Depende da maneira como vc queira representar o problema:
+EX: Desenvolver um algoritmo que leia um número inteiro e verifique se é divisível por 5 e
+divisível por 3 exiba uma mensagem com esta informação.
+
+    se (num%5 = 0) entao					(1ª)condição
+        escreval ("e divisivel por 5 ")    
+    fimse
+    se (num%3 = 0) entao					(2ª)condição
+        escreval ("e divisivel por 3")
+    fimse
+    se ((num%3 = 0) e (num%5 = 0)) entao			(3ª)condição
+        escreval ("e divisivel por 5 e por 3")
+
+No código acima ele rodará as 3 condições se o numero de entrada for divisivel por 5 e 3 (Ex: 15), 
+pois com o uso apenas do IF ele não irá finalizar o código na 1ª condição, visto que 15 já é divisível por 5.
+
+
+
+    se (num%5 = 0) entao					(1ª)condição
+        escreval ("e divisivel por 5")    
+    fimse
+    senao
+    se (num%3 = 0) entao					(2ª)condição
+        escreval ("e divisivel por 3")
+    fimse
+    se ((num%3 = 0) e (num%5 = 0))entao				(3ª)condição
+        escreval ("e divisivel por 5 e por 3")
+
+No código acima ele rodará apenas as 2 condições (1ª e 3ª) se o numero de entrada for divisivel por 5 e 3 (Ex: 15), 
+pois com o uso do SENAO SE, na 1ª condição já o satisfaz (15 é divisivel por 5), então ele irá "pular" a 2ª condição e ir para a proxima.
+
+O mesmo acontecerá caso tenha SENAO SE na 2ª e 3ª condição, ele rodará apenas a 1ª condição.
+
+Ou seja o uso do somente SE é utilizado quando uma condição bate com a outra pelo valor de entrada e, voce precise que sejam exibidos ou rodados
+todas as condições para que o mostre o resultado certo na tela.

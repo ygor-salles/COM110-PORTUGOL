@@ -1,0 +1,26 @@
+algoritmo "Lista 5.2 - Exercicio 8"
+
+// Elabore um algoritmo para calcular o máximo divisor comum entre dois números.
+
+var
+num1 , num2 , maior , menor , aux: inteiro
+inicio
+escreva ("Digite o primeiro numero: ")
+leia (num1)
+escreva ("Digite o segundo numero: ")
+leia (num2)
+se (num1 > num2) entao
+   maior <- num1
+   menor <- num2
+senao
+   maior <- num2
+   menor <- num1
+fimse                                 //Antes de começar devemos validar o maior valor dos numeros digitados pelo usuário
+enquanto (maior % menor <> 0) faca    //Enquanto o resto da divisão não chegar igual a zero não deve mostrar o resultado
+   aux <- menor                       //Para efetuar o calculo, devemos acrescentar uma variável auxiliar
+   menor <- maior % menor
+   maior <- aux                       //A variável menor será a maior no próximo loop dividido pela menor que é o resto da divisão obtido no loop anterior
+fimenquanto
+escreval ("")
+escreval ("O máximo divisor comum entre", num1, " e", num2, " é:", menor)
+fimalgoritmo

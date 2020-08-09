@@ -1,0 +1,19 @@
+algoritmo "Lista 5.2 - Exercicio 9"
+
+// Elabore um algoritmo para imprimir os n primeiros termos da sequência definida por
+// recorrência: yi+1 = yi+ i, i = 1, 2, ..., n sendo y1 = 1
+
+var
+i, n, y : inteiro
+
+inicio
+escreva ("Digite o valor de N: ")
+leia (n)
+
+y<-0                         //devemos inicializar a variável com 0, pois Y1=1 -> Yi=Yi+i ou seja Y1=0+1
+para i de 1 ate n faca
+y <- y+i                     //nesta sequencia o i assumirá os valores 1,2,3... somado com o Y da sua sequencia
+escreval (y)
+fimpara
+
+fimalgoritmo

@@ -1,0 +1,36 @@
+			USO DO SE E SENAO
+// A partir de valores digitados pelo usuário da média de um aluno, informar se ele foi
+// aprovado (media >= 6), reprovado (0 < media < 3), ou se ficou de exame
+// (3<=media<6).
+
+uso [SENAO SE (FIMSE no final)] ou apenas [SENAO SE]:
+
+     se (media >= 6) entao			(1ª)Condição
+     escreval ("Aprovado!")
+     senao
+          se  (media < 3) entao			(2ª)Condição
+          escreval ("Reprovado!")
+          senao
+          escreval ("Ficou de exame!")		(3ª)Condição
+          fimse
+     fimse
+
+se (media >=3) e (media <6) entao		Caso ocorra a Condição 2, entrará em outro bloco de ações
+escreva ("Digite a nota de seu exame: ")
+leia (exame)
+          se (exame >= 6) entao			(1ª) Condição
+          escreval ("Aprovado no exame!")
+          senao					
+          escreval ("Reprovado no exame!")	(2ª) Condição
+          fimse
+
+
+Neste caso é obrigatório o uso do SENAO SE pois uma condição não terá vículo com a outra, seja qual for a entrada de dados 
+digitadas pelo usuário, para que mostre o resultado correto na tela.
+
+
+Na realidade os dois termos dariam certo com uso do [SENAO SE (FIMSE no final)] e [SE (FIMSE)], porém para eficiência do programa
+para que fique mais leve, deve-se utilizar o modo SENAO SE conforme algoritmo acima, pois dessa maneira o programa não precisará rodar todas as linhas
+de código. 
+No [SENAO SE] quando ele encontra a linha que o satisfaça, ele para e já exibi o resultado, e, no [SE] ele roda todas as linhas do código
+mesmo que já tenha encontrado a condição que o satisfaça e depois de ter rodado todas as linhas, ae que mostrará o resultado. 

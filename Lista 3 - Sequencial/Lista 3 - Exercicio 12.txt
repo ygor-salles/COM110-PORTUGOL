@@ -1,0 +1,16 @@
+algoritmo "Lista 3 - Exercicio 12"
+
+//Escreva um algoritmo para calcular e exibir o comprimento de uma circunferencia, sendo dado o valor de seu raio. C = 2 (ƒÎ) R
+
+var
+c, r : real
+
+inicio
+escreva ("Digite o valor do raio: ")
+leia (r)
+
+c <- 2*pi*r
+
+escreval ("O valor da circuferencia é de: ",c)
+
+fimalgoritmo

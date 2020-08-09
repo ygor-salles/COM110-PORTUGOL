@@ -1,0 +1,33 @@
+algoritmo "Lista 5.2 - Exercicio 7"
+
+// Escreva um algoritmo que leia uma lista de n nomes e imprima os nomes concatenados
+// em uma frase separados com espaco. O valor de n deve ser fornecido pelo usuario. Caso
+// o nome Francisco seja digitado, a leitura dos nomes deve ser interrompida. Elabore
+// duas versoes do algoritmo: uma utilizando o interrompa com para faca e a outra
+// utilizando somente o enquanto.
+// Veja os exemplos abaixo:
+// * n=5, nomes digitados = Maria, Joao, Paulo, Felipe e Jose.
+// Saida: Maria Joao Paulo Felipe Jose.
+// * n = 5, nomes digitados = Maria, Joao, Francisco
+// Saida: Maria Joao
+
+var
+nome , nomes : caractere
+n , i : inteiro
+
+inicio
+
+escreva ("Digite a quantidade de nomes: ")   //Pedir para usuário digitar a quantidade de nomes
+leia (n)
+     para i de 1 ate n faca
+     escreva ("Digite um nome: ")
+     leia (nome)
+          se (nome = "Francisco") entao  //Se o nome for francisco deve interromper a sequencia
+             interrompa
+             nome <- " " //Se o nome for francisco também deve "receber vazio" para que ele não seja exibido na saída
+          fimse
+     nomes <- nomes +" "+ nome  //nomes será a variável que receberá todos os outros digitados
+     fimpara
+escreval (nomes)
+
+fimalgoritmo

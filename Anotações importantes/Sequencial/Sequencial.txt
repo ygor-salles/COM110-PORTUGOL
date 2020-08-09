@@ -1,0 +1,12 @@
+DIVISÕES E RESTO DE DIVISÕES:
+
+% ou MOD --> resto da divisão (declarar variável como inteiro)
+
+\ --> divisão de inteiro (declarar variável como inteiro)
+
+/ --> divisão normal (declarar variável como real)
+
+EXEMPLO: 10 \_3_    1 = resto da divisão
+	- 9   3	    3 = divisão por inteiro
+        ____
+	   1

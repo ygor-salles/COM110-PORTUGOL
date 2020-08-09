@@ -1,0 +1,14 @@
+algoritmo "Exercicio 1 - Livro Fundamentos de Programação"
+
+var
+   i : inteiro
+
+inicio
+
+ para i de 1000 ate 2000 faca
+  se (i % 11 = 5) entao
+   escreval (" ",i)
+  fimse
+ fimpara
+ 
+fimalgoritmo

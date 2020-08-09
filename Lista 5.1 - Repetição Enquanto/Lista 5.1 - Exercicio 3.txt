@@ -1,0 +1,31 @@
+algoritmo "Lista 5.1 - Exercicio 3"
+
+//Escreva um algoritmo que leia o nome do funcionário, o salário bruto,
+// o valor do desconto e a gratificação do funcionário
+// e escreva na tela o nome e o valor do salário líquido.
+// Os nomes devem ser lidos
+// até que a sequência XXXX seja digitada.
+
+var
+salario, desconto, gratificacao, salLiquido : real
+nome : caracter
+
+inicio
+escreva ("Digite o nome: ")
+leia (nome)
+
+salLiquido <- 0
+enquanto (nome<>"xxxx") faca
+escreva ("Digite o salario bruto: R$")
+leia (salario)
+escreva ("Digite o valor de desconto: R$")
+leia (desconto)
+escreva ("Digite a gratificação: R$")
+leia (gratificacao)
+salLiquido <- salario - desconto + gratificacao
+escreval ("O salário líquido é de: R$",salLiquido)
+escreva ("Digite o nome: ")
+leia (nome)
+fimenquanto
+
+fimalgoritmo

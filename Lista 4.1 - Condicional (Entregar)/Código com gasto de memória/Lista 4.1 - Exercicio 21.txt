@@ -1,0 +1,43 @@
+algoritmo "Lista 4.1 - Exercicio 21"
+
+//Função: Faça um progrma que receba o preço de um produto e o seu código de origem e mostre a sua procedência.
+//Autor: Ygor Salles Aniceto Carvalho e Yasmin Karoline Aniceto Carvalho
+//Data:21/03/2018
+//Seção de Declarações
+
+var
+preco : real
+codigo : inteiro
+
+inicio
+escreva ("Digite o preço do produto: ")
+leia (preco)
+escreva ("Digite o código de origem: ")
+leia (codigo)
+
+se (codigo = 1) entao
+escreval ("Procedêcia SUL")
+fimse
+     se (codigo = 2) entao
+     escreval ("Procedêcia NORTE")
+     fimse
+          se (codigo = 3) entao
+          escreval ("Procedêcia LESTE")
+          fimse
+               se (codigo = 4) entao
+               escreval ("Procedêcia OESTE")
+               fimse
+                    se ((codigo = 5) ou (codigo = 6)) entao
+                    escreval ("Procedêcia NORDESTE")
+                    fimse
+                         se ((codigo = 7) ou (codigo = 8) ou (codigo = 9)) entao
+                         escreval ("Procedêcia SUDESTE")
+                         fimse
+                              se ((codigo > 9) e (codigo <= 20)) entao
+                              escreval ("Procedêcia CENTRO-OESTE")
+                              fimse
+                                   se ((codigo > 20) e (codigo <= 30)) entao
+                                   escreval ("Procedêcia NOROESTE")
+                                   fimse
+					
+fimalgoritmo

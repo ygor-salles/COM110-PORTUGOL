@@ -1,0 +1,28 @@
+algoritmo "Exercicio 5"
+
+var
+nome : caracter
+compras, bonus, soma : real
+i : inteiro
+
+inicio
+
+soma <- 0
+para i de 1 ate 4 faca
+escreva ("Digite seu nome: ")
+leia (nome)
+escreva ("Digite o valor de suas compras do ano passado: R$")
+leia (compras)
+     se (compras < 1000) entao
+     bonus <- compras*0.10
+     escreval ("o seu bônus em compras é de: R$",bonus)
+              senao
+              bonus <- compras*0.15
+              escreval ("o seu bônus em compras é de: R$",bonus)
+     fimse
+soma <- soma+compras
+fimpara
+
+escreval ("A soma de todos o compras é: ",compras)
+
+fimalgoritmo

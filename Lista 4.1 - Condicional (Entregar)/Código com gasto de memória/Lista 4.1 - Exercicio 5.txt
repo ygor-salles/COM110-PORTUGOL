@@ -1,0 +1,51 @@
+algoritmo "Lista 4.1 - Exercicio 5"
+// Função : Listar operções de escolha a partir da entrada dedois números
+//   digitados e mostrar o resultado conforme escolha de usuário.
+// Autor : Ygor Salles Aniceto Carvalho e Yasmin Karoline Aniceto Carvalho
+// Data : 18/03/2018
+// Seção de Declarações
+var
+ num1, num2, op , sub, mult : inteiro
+ divi , media : real
+inicio
+escreva ("Entre com primero numero: ")
+leia (num1)
+escreva ("Entre com o segundo número: ")
+leia (num2)
+
+escreval ("Opção 1: Media entre os números digitados. ")
+escreval ("Opção 2: Diferença do maior pelo menor. ")
+escreval ("Opção 3: Produto entre os números digitados. ")
+escreval ("Opção 4: Divisão do primeiro pelo segundo: ")
+escreval ("Digite a opção desejada de 1 a 4 : ")
+leia (op)
+
+        se (op = 1) entao
+        media <- (num1 + num2) / 2
+        escreval ("A MEDIA E: ", media)
+        fimse
+                 se (op = 2) entao
+                    se (num1 > num2) entao
+                    sub <- (num1 - num2)
+                    escreval ("A DIFERENCA DO MAIOR PELO MENOR E: ", sub)
+                    senao
+                    sub <- (num2 - num1)
+                    escreval ("A DIFERENCA DO MAIOR PELO MENOR E: ", sub)
+                    fimse
+                 fimse
+                              se (op = 3) entao
+                              mult <- num1 * num2
+                              escreval ("O PRODUTO ENTRE OS NUMEROS DIGITADOS E: ", mult)
+                              fimse
+                                       se (op = 4) entao
+                                          se (num2 <> 0) entao
+                                          divi <- num1 / num2
+                                          escreval ("DIVISAO DO PRIMEIRO PELO SEGUNDO E: ", divi)
+                                          senao
+                                          escreval ("O SEGUNDO NUMERO DEVE SER DIFERENTE DE ZERO!")
+                                          fimse
+                                       fimse
+                                                     se ((op<1) ou (op>4)) entao
+                                                     escreval ("OPCAO INVALIDA!")
+                                                     fimse
+fimalgoritmo

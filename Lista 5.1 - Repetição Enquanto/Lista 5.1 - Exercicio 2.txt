@@ -1,0 +1,22 @@
+algoritmo "Lista 5.1 - Exercicio 2"
+
+// Escreva um algoritmo que leia sequência de números digitados pelo usuário
+// até que o número 0 seja digitado e retorne a soma dos números digitados
+
+var
+num, soma : inteiro
+
+inicio
+escreva ("Digite um numero: ")
+leia (num)
+
+soma <- 0
+enquanto (num<>0) faca
+soma <- soma+num
+escreva ("Digite um número: ")
+leia (num)
+fimenquanto
+
+escreval ("O valor total da soma dos números digitados é de: ",soma)
+
+fimalgoritmo

@@ -1,0 +1,24 @@
+algoritmo "Lista 4 - Exercicio 11"
+
+var
+a, b, c : real
+
+inicio
+escreva ("Digite o valor de A: ")
+leia (a)
+escreva ("Digite o valor de B: ")
+leia (b)
+escreva ("Digite o valor de C: ")
+leia (c)
+
+se (a^2 = b^2+c^2) entao
+escreval ("É um triangulo retângulo")
+senao
+     se (a^2 > b^2+c^2) entao
+     escreval ("É um triangulo obtusângulo")
+     senao
+     escreval ("Não é um triangulo retangulo nem obtusangulo!")
+     fimse
+fimse
+
+fimalgoritmo

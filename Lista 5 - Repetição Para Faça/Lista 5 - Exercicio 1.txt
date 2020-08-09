@@ -1,0 +1,17 @@
+algoritmo "Lista 5 - Exercicio 1"
+
+//Escreva um algoritmo que leia dez números do usuário e imprima a metade de cada número
+
+var
+i : inteiro
+num : real
+
+inicio
+
+para i de 1 ate 10 passo 1 faca
+escreva ("Digite um numero: ")
+leia (num)
+escreval (num/2)
+fimpara
+
+fimalgoritmo

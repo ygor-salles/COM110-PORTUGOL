@@ -1,0 +1,18 @@
+algoritmo "Lista 3 - Exercicio 13"
+
+//Faça um algoritmo que receba o peso de uma pessoa, calcule e mostre: a. O novo peso quando a pessoa engorda 15% do peso digitado    b. O novo peso quando a pessoa engorda 20% do peso digitado
+
+var
+peso, np15, np20 : real
+
+inicio
+escreva ("Digite o seu peso: ")
+leia (peso)
+
+np15 <- (peso*0.15)+peso
+np20 <- (peso*0.20)+peso
+
+escreval ("O seu novo peso quando engorda 15% é de: ",np15)
+escreval ("O seu novo peso quando engorda 20% é de: ",np20)
+
+fimalgoritmo

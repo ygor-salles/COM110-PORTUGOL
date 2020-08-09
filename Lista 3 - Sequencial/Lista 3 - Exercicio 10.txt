@@ -1,0 +1,22 @@
+algoritmo "Lista 3 - Exercicio 10"
+
+//Construa um algoritmo que, tendo como dados de entrada dois pontos quaisquer do plano, P(x1,y1) e Q(x2, y2), imprima a distância entre eles.
+
+var
+x1, x2, y1, y2, distancia : real
+
+inicio
+escreva ("Digite o valor de x1: ")
+leia (x1)
+escreva ("Digite o valor de x2: ")
+leia (x2)
+escreva ("Digite o valor de y1: ")
+leia (y1)
+escreva ("Digite o valor de y2: ")
+leia (y2)
+
+distancia <- ((x2-x1)^2+(y2-y1)^2)^(1/2)
+
+escreval ("A distancia entre os pontos é de :",distancia)
+
+fimalgoritmo

@@ -1,0 +1,20 @@
+algoritmo "Lista 5 - Exercicio 4"
+
+// Escreva um algoritmo que leia 15 números e imprima a média dos números digitados.
+
+var
+i : inteiro
+num, soma, media : real
+
+inicio
+soma <- 0
+para i de 1 ate 15 faca
+escreva ("Digite um número: ")
+leia (num)
+soma <- soma+num
+fimpara
+
+media <- soma/15
+escreval ("A media dos números digitados é de: ",media)
+
+fimalgoritmo

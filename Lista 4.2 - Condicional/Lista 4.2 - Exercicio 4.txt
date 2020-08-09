@@ -1,0 +1,54 @@
+algoritmo "Lista 4.2 - Exercicio 4"
+
+// Faça um algoritmo que receba a idade e o grupo de risco de um cliente da
+// companhia e retorne o código da sua categoria
+
+var
+idade, cod : inteiro
+grupo : caracter
+
+inicio
+escreva ("Digite a sua idade: ")
+leia (idade)
+escreva ("Digite o grupo de risco: ")
+leia (grupo)
+
+se (idade >= 18) e (idade <= 24) e (grupo = "a") entao
+escreval ("Código 7")
+senao
+     se (idade >= 18) e (idade <= 24) e (grupo = "b") entao
+     escreval ("Código 8")
+     senao
+          se (idade >= 18) e (idade <= 24) e (grupo = "c") entao
+          escreval ("Código 9")
+          senao
+               se (idade >= 25) e (idade <= 40) e (grupo = "a") entao
+               escreval ("Código 4")
+               senao
+                    se (idade >= 25) e (idade <= 40) e (grupo = "b") entao
+                    escreval ("Código 5")
+                    senao
+                         se (idade >= 25) e (idade <= 40) e (grupo = "c") entao
+                         escreval ("Código 6")
+                         senao
+                              se (idade >= 41) e (idade <= 70) e (grupo = "a") entao
+                              escreval ("Código 1")
+                              senao
+                                   se (idade >= 41) e (idade <= 70) e (grupo = "b") entao
+                                   escreval ("Código 2")
+                                   senao
+                                        se (idade >= 41) e (idade <= 70) e (grupo = "c") entao
+                                        escreval ("Código 3")
+                                        senao
+                                             escreval ("Digite a idade e/ou codigo de grupo correto!")
+                                        fimse
+                                   fimse
+                              fimse
+                         fimse
+                    fimse
+               fimse
+          fimse
+     fimse
+fimse
+
+fimalgoritmo
